@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arbora – Informativa sulla privacy</title>
+<style>
+  :root { --bg: #F4F2EC; --card: #FFFFFF; --ink: #1B2A1F; --muted: #66705F; --green: #2F6B3B; --line: #E1DDD2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1410; --card: #1A211B; --ink: #EAF0E6; --muted: #9AA594; --green: #6FBF7A; --line: #2B342C; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { color: var(--green); margin-bottom: 4px; }
+  h2 { margin-top: 32px; font-size: 1.15rem; }
+  .muted { color: var(--muted); }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 20px 16px; margin-top: 16px; }
+  a { color: var(--green); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 24px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🌳 Arbora</h1>
+  <p class="muted">Informativa sulla privacy · aggiornata il 2 ottobre 2026</p>
+
+  <section>
+    <h2>Chi siamo</h2>
+    <p>Arbora è un'app per la manutenzione del verde: il manutentore censisce le piante di un parco e registra gli interventi, il proprietario del parco (cliente) consulta lo stato delle piante e segnala problemi.</p>
+    <p>Titolare del trattamento: Luca Uberti — <a class="mail" href="#">[email]</a>.</p>
+
+    <h2>Quali dati raccogliamo</h2>
+    <ul>
+      <li><strong>Account:</strong> nome, email e password (la password è conservata solo in forma cifrata).</li>
+      <li><strong>Dati dei parchi:</strong> nome, indirizzo e perimetro del parco; per ogni pianta specie, posizione, misure, stato di salute, note e foto; interventi eseguiti o programmati.</li>
+      <li><strong>Segnalazioni:</strong> testo, eventuale foto e posizione del problema segnalato.</li>
+      <li><strong>Posizione:</strong> usata solo quando premi “Usa la mia posizione GPS”, per segnare dove si trova una pianta, un angolo del parco o un problema. Non tracciamo la tua posizione in background.</li>
+      <li><strong>Fotocamera e foto:</strong> usate solo quando scegli di fotografare o allegare un'immagine.</li>
+    </ul>
+
+    <h2>Perché li usiamo</h2>
+    <p>Esclusivamente per far funzionare l'app: mostrare il parco, le piante e lo storico degli interventi a chi ne ha accesso. Non vendiamo dati, non mostriamo pubblicità e non usiamo strumenti di tracciamento o profilazione.</p>
+
+    <h2>Chi può vederli</h2>
+    <p>I dati di un parco sono visibili solo al manutentore che lo gestisce e ai clienti a cui ha dato il codice di accesso. Il manutentore può revocare l'accesso in qualsiasi momento.</p>
+
+    <h2>Dove sono conservati</h2>
+    <p>Su server gestiti da Supabase, il nostro fornitore di database e archiviazione, con connessioni cifrate.</p>
+
+    <h2>Per quanto tempo</h2>
+    <p>Finché l'account o il parco restano attivi. Eliminando un parco vengono eliminati anche le sue piante, gli interventi, le segnalazioni e le foto.</p>
+
+    <h2>I tuoi diritti</h2>
+    <p>Puoi chiedere in qualsiasi momento di consultare, correggere o cancellare i tuoi dati e il tuo account scrivendo a <a class="mail" href="#">[email]</a>. Hai inoltre diritto di presentare reclamo al Garante per la protezione dei dati personali.</p>
+  </section>
+
+  <hr>
+
+  <h1 lang="en">Privacy Policy (English)</h1>
+  <section lang="en">
+    <p>Arbora is a tree-care management app. A maintainer maps a park and records its trees and maintenance work; the park owner views them and reports problems.</p>
+    <p><strong>Data we collect:</strong> account name, email and (encrypted) password; park data (name, address, boundary, trees with species, position, measurements, health, notes, photos, maintenance records); problem reports with optional photo and position. Location is used only when you tap “use my GPS position”; it is never tracked in the background. Camera and photos are used only when you choose to attach an image.</p>
+    <p><strong>Use:</strong> solely to provide the app's features. No selling of data, no advertising, no tracking.</p>
+    <p><strong>Access:</strong> park data is visible only to its maintainer and to the clients they invite.</p>
+    <p><strong>Storage:</strong> on servers operated by Supabase, over encrypted connections, until the account or park is deleted.</p>
+    <p><strong>Your rights:</strong> to access, correct or delete your data and account, write to <a class="mail" href="#">[email]</a>.</p>
+  </section>
+</main>
+<script>
+  // L'indirizzo non compare per intero nel sorgente, così i bot che raccolgono email non lo trovano.
+  (function () {
+    var addr = ['lucaube02', 'icloud.com'].join(String.fromCharCode(64));
+    document.querySelectorAll('a.mail').forEach(function (a) {
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    });
+  })();
+</script>
+</body>
+</html>
